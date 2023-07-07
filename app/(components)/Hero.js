@@ -1,16 +1,19 @@
 import Image from 'next/image'
-import model from '../../public/michael-angelo-david.jpg'
+import model from '../../public/michael-angelo-david-crop.png'
+import ScrollDownButton from './ScrollDownButton'
 
 const Hero = () => {
   return (
-    <div className='flex justify-center items-center'>
+    <section
+      className='flex justify-center items-center relative overflow-hidden h-vh85 md:h-vh115'
+      id='page1'
+    >
       <Image
         src={model}
         alt='3D Render of Michaelangelos David'
-        width={500}
-        height={300}
+        className='absolute bottom-0 transform translate-y-10 top-20 md:top-64 w-full md:w-7/12'
       />
-    </div>
+    </section>
   )
 }
 

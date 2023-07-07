@@ -1,6 +1,9 @@
 const SectionThree = () => {
   return (
-    <section className='flex items-center justify-center h-screen bg-gradient-to-b from-gray-500 to-black'></section>
+    <section
+      id='page3'
+      className='flex items-center justify-center h-screen bg-gradient-to-b from-gray-500 to-black relative z-0'
+    ></section>
   )
 }
 
