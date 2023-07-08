@@ -16,24 +16,38 @@ import {
 
 const ScrollDownButton = () => {
   const [targetPage, setTargetPage] = useState('page2')
+  const [scrollToTop, setScrollToTop] = useState(false)
 
   const findClosestPage = () => {
     const sections = document.querySelectorAll('section')
+    const footer = document.querySelectorAll('footer')
+    const allSections = [...sections, ...footer]
     const componentPosition = window.pageYOffset
     let closestPage
     let shortestDistance = Number.MAX_VALUE
 
-    sections.forEach((section) => {
+    allSections.forEach((section) => {
       const sectionPosition = section.offsetTop
       const distance = Math.abs(sectionPosition - componentPosition)
+
       if (distance < shortestDistance) {
         shortestDistance = distance
         closestPage = section.id
       }
+
+      if (distance < 10) {
+        setTargetPage('page1')
+      }
     })
 
     if (closestPage) {
-      setTargetPage(`page${parseInt(closestPage.slice(4)) + 1}`)
+      if (`page${parseInt(closestPage.slice(4)) + 1}` === 'page-footer') {
+        setTargetPage('page1')
+        setScrollToTop(true)
+      } else {
+        setTargetPage(`page${parseInt(closestPage.slice(4)) + 1}`)
+        setScrollToTop(false)
+      }
     }
   }
 
@@ -58,7 +72,9 @@ const ScrollDownButton = () => {
       >
         <FontAwesomeIcon
           icon={faAngleDown}
-          className='text-black text-4xl mt-1'
+          className={` transition-all duration-300 ease-in-out text-black text-4xl ${
+            scrollToTop ? 'mb-1 rotate-180' : 'mt-1'
+          }`}
         />
       </ScrollLink>
     </div>
@@ -68,6 +84,9 @@ const ScrollDownButton = () => {
 export default ScrollDownButton
 /*
 
+<div className={`text-center ${isTrue ? 'bg-green-500 text-white' : 'bg-red-500 text-black'}`}>
+  Content
+</div>
 
 
 const sections = document.querySelectorAll('section')
