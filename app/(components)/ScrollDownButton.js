@@ -17,6 +17,7 @@ import {
 const ScrollDownButton = () => {
   const [targetPage, setTargetPage] = useState('page2')
   const [scrollToTop, setScrollToTop] = useState(false)
+  const [offset, setOffset] = useState(50)
 
   const findClosestPage = () => {
     const sections = document.querySelectorAll('section')
@@ -43,10 +44,12 @@ const ScrollDownButton = () => {
     if (closestPage) {
       if (`page${parseInt(closestPage.slice(4)) + 1}` === 'page6') {
         setTargetPage('page1')
+        setOffset(-50)
         setScrollToTop(true)
       } else {
         setTargetPage(`page${parseInt(closestPage.slice(4)) + 1}`)
         setScrollToTop(false)
+        setOffset(50)
       }
     }
   }
@@ -67,7 +70,7 @@ const ScrollDownButton = () => {
         spy={true}
         smooth={true}
         delay={0}
-        offset={50}
+        offset={offset}
         duration={500}
       >
         <FontAwesomeIcon
