@@ -41,7 +41,7 @@ const ScrollDownButton = () => {
     })
 
     if (closestPage) {
-      if (`page${parseInt(closestPage.slice(4)) + 1}` === 'page-footer') {
+      if (`page${parseInt(closestPage.slice(4)) + 1}` === 'page6') {
         setTargetPage('page1')
         setScrollToTop(true)
       } else {
