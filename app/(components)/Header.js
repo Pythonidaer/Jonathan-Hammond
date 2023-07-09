@@ -10,13 +10,20 @@ import {
   scrollSpy,
   scroller,
 } from 'react-scroll'
+import Image from 'next/image'
+import mechArm from '../../public/mech-arm.png'
 
 const Header = () => {
   return (
     <header className='flex items-center justify-between px-4 py-2 bg-gray-200'>
       <div className='flex items-center'>
         <Link className='text-xl font-bold text-gray-800' href='/'>
-          Logo
+          <Image
+            src={mechArm}
+            alt='3D Render of Michaelangelos David'
+            width={30}
+            height={30}
+          />
         </Link>
       </div>
       <div className='flex items-center space-x-4'>
@@ -30,7 +37,7 @@ const Header = () => {
           offset={50}
           duration={500}
         >
-          Link 1
+          Hero
         </ScrollLink>
         <ScrollLink
           activeClass='active'
@@ -42,7 +49,7 @@ const Header = () => {
           offset={50}
           duration={500}
         >
-          Link 2
+          Portfolio
         </ScrollLink>
         <ScrollLink
           activeClass='active'
@@ -54,7 +61,7 @@ const Header = () => {
           offset={50}
           duration={200}
         >
-          Link 3
+          TBD
         </ScrollLink>
         <ScrollLink
           activeClass='active'
@@ -66,7 +73,7 @@ const Header = () => {
           offset={50}
           duration={500}
         >
-          Link 4
+          TBD
         </ScrollLink>
       </div>
     </header>
