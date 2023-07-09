@@ -2,6 +2,7 @@ import Image from 'next/image'
 import model from '../../public/michael-angelo-david-crop.png'
 import ScrollDownButton from './ScrollDownButton'
 
+/* Hero Image should be redesigned, because it doesn't touch bottom of section container */
 const Hero = () => {
   return (
     <section

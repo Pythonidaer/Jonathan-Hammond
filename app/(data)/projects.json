@@ -1,0 +1,32 @@
+[
+  {
+    "photo": "/reddie.png",
+    "url": "https://reddie.herokuapp.com/",
+    "title": "Reddie",
+    "description": "Custom UI for Saving Reddit Comments"
+  },
+  {
+    "photo": "/resume.png",
+    "url": "https://resumeequalizer.herokuapp.com/",
+    "title": "Resume Equalizer",
+    "description": "Separates PDF Text into Parts of Speech"
+  },
+  {
+    "photo": "/next.png",
+    "url": "https://whats-next-ten.vercel.app/",
+    "title": "What's Next",
+    "description": "Posting Complaint Form and Data Table"
+  },
+  {
+    "photo": "/steppingstones.png",
+    "url": "https://stepping-stones-54c043ae9918.herokuapp.com/",
+    "title": "Stepping Stones",
+    "description": "Multi-Step Sign-up for Bootcamp Grads"
+  },
+  {
+    "photo": "/markdown.png",
+    "url": "https://markdown-links-generator.vercel.app/",
+    "title": "Markdown Generator",
+    "description": "Easy-Paste README.md Links Builder"
+  }
+]
