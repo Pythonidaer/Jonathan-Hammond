@@ -10,13 +10,13 @@ import data from '../(data)/projects.json'
 
 const PortfolioCard = () => {
   return (
-    <div className='w-11/12 pt-1 md:w-5/6 mx-auto flex flex-wrap justify-start'>
+    <div className='w-11/12 pt-1 md:w-5/6 mx-auto flex flex-wrap  md:justify-center lg:justify-start'>
       {data.map((item, index) => (
         <Link
           key={index}
           href={item.url}
           target='_blank'
-          className='sm:mx-auto md:mx-0 mb-6 md:w-1/2 lg:w-1/3 xl:w-1/3 relative'
+          className='text-center mb-6  lg:w-1/3 xl:w-1/3 relative'
         >
           <div className='relative inline-block rounded-lg overflow-hidden group'>
             <img

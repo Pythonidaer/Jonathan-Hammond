@@ -14,8 +14,19 @@ module.exports = {
       },
       height: {
         128: '32rem',
-        vh85: '85vh',
+        // vh85: '85vh',
+        vh85: '55vh',
         vh115: '115vh',
+        svhcalc: 'calc(100svh - 50px)',
+      },
+      minHeight: {
+        px500: '500px',
+      },
+      top: {
+        rem25: '25rem',
+      },
+      maxHeight: {
+        px600: '600px',
       },
     },
   },

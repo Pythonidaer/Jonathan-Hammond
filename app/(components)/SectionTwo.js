@@ -1,10 +1,15 @@
+import styles from './SectionTwo.module.css'
+
 const SectionTwo = () => {
   return (
-    <section id='page2' className='min-h-full bg-black relative z-0'>
+    <section
+      id='page2'
+      className={`min-h-full bg-black relative z-0 ${styles.page2} pb-7`}
+    >
       <h1 className='text-center text-6xl md:text-9xl md:text-center uppercase py-6 md:py-10 mb-0 font-mono'>
         Greetings!
       </h1>
-      <div className='w-11/12 md:w-5/6 mx-auto grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3'>
+      <div className='w-11/12 md:w-5/6 lg:w-1/2 mx-auto grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3'>
         <div className='col-span-1 md:col-span-1 lg:col-span-1'>
           <div>
             <p className='mb-7 text-2xl'>About</p>
