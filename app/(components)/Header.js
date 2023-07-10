@@ -29,20 +29,20 @@ const Header = () => {
       <div className='flex items-center space-x-4'>
         <ScrollLink
           activeClass='active'
-          className='text-gray-800'
-          to='page1'
+          className='text-gray-800 transform duration-300 cursor-pointer hover:text-black hover:font-semibold'
+          to='page2'
           spy={true}
           smooth={true}
           delay={0}
           offset={50}
           duration={500}
         >
-          Hero
+          About
         </ScrollLink>
         <ScrollLink
           activeClass='active'
-          className='text-gray-800'
-          to='page2'
+          className='text-gray-800 transform duration-300 cursor-pointer hover:text-black hover:font-semibold'
+          to='page3'
           spy={true}
           smooth={true}
           delay={0}
@@ -53,8 +53,8 @@ const Header = () => {
         </ScrollLink>
         <ScrollLink
           activeClass='active'
-          className='text-gray-800'
-          to='page3'
+          className='text-gray-800 transform duration-300 cursor-pointer hover:text-black hover:font-semibold '
+          to='page4'
           spy={true}
           smooth={true}
           delay={0}
@@ -65,8 +65,8 @@ const Header = () => {
         </ScrollLink>
         <ScrollLink
           activeClass='active'
-          className='text-gray-800'
-          to='page4'
+          className='text-gray-800 transform duration-300 cursor-pointer hover:text-black hover:font-semibold'
+          to='page5'
           spy={true}
           smooth={true}
           delay={0}

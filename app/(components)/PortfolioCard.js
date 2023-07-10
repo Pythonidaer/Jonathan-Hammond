@@ -22,7 +22,7 @@ const PortfolioCard = () => {
             <img
               src={item.photo}
               alt={item.title}
-              className='rounded-lg filter brightness-100 group-hover:brightness-50 transition duration-300'
+              className='rounded-lg filter brightness-100 group-hover:brightness-50 transition duration-300 group-hover:scale-105 transition-transform '
             />
 
             <div className='absolute bottom-0 left-0 right-0 max-w-full w-full bg-black bg-opacity-70 p-4 text-white rounded-b-lg'>
