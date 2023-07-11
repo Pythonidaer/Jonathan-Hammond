@@ -28,6 +28,15 @@ module.exports = {
       maxHeight: {
         px600: '600px',
       },
+      backgroundColor: {
+        accent: 'rgb(0 114 206)',
+      },
+      borderColor: {
+        accent: 'rgb(0 114 206)',
+      },
+      colors: {
+        accent: 'rgb(0 114 206)',
+      },
     },
   },
   plugins: [],

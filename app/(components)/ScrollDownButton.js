@@ -49,7 +49,7 @@ const ScrollDownButton = () => {
       } else {
         setTargetPage(`page${parseInt(closestPage.slice(4)) + 1}`)
         setScrollToTop(false)
-        setOffset(50)
+        setOffset(0)
       }
     }
   }
@@ -65,7 +65,7 @@ const ScrollDownButton = () => {
   return (
     <div className='flex justify-end self-end mt-5 fixed bottom-0 right-0 z-20'>
       <ScrollLink
-        className='relative flex items-center justify-center w-12 h-12 rounded-full bg-white transition-transform hover:translate-y-2  mb-3 mr-3 border-4 border-cyan-500 rounded-full'
+        className='relative flex items-center justify-center w-12 h-12 rounded-full bg-white transition-transform hover:translate-y-2  mb-3 mr-3 border-4 border-accent rounded-full'
         to={targetPage}
         spy={true}
         smooth={true}

@@ -1,15 +1,12 @@
-import PortfolioCard from './PortfolioCard'
+import PortfolioFlipCard from './PortfolioFlipCard'
 
 const SectionThree = () => {
   return (
-    <section
-      id='page3'
-      className='min-h-full bg-gradient-to-b from-white  to-cyan-500 relative z-0'
-    >
-      <h1 className='text-center text-6xl md:text-9xl md:text-center uppercase py-6 md:py-10 mb-0 font-mono text-black'>
+    <section id='page3' className='min-h-full bg-white relative z-0'>
+      <h2 className='text-center text-6xl md:text-9xl md:text-center uppercase py-6 md:py-10 mb-0 font-mono text-accent'>
         Portfolio
-      </h1>
-      <PortfolioCard />
+      </h2>
+      <PortfolioFlipCard />
     </section>
   )
 }

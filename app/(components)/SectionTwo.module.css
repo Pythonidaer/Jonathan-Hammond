@@ -1,7 +1,12 @@
 .page2 {
-  /* Special thanks to: https://css-pattern.com/ */
-  --s: 20px; /* size of the lines */
-  --g: 15px; /* gap between lines */
+  background: rgb(0 114 206);
+}
+
+/*
+.page2 {
+  /* Special thanks to: https://css-pattern.com/ 
+  --s: 20px; /* size of the lines 
+  --g: 15px; /* gap between lines 
   --c1: black;
   --c2: grey;
   /* background: conic-gradient(
@@ -18,11 +23,11 @@
       var(--c1) 0
     ),
   background-size: calc(2 * (var(--s) + var(--g)))
-    calc(2 * (var(--s) + var(--g))); */
+    calc(2 * (var(--s) + var(--g))); 
 
   background-image: repeating-linear-gradient(
     135deg,
-    rgb(14 165 233) 2px,
+    rgb(0 114 206) 2px,
 
     white 1px,
     transparent 1px,
@@ -40,7 +45,7 @@
   background: black;
   opacity: 0.25;
   z-index: -3;
-} */
+} 
 
 .page2::before {
   content: '';
@@ -52,9 +57,9 @@
   background-image: repeating-linear-gradient(
     45deg,
     white 2px,
-    rgb(14 165 233) 4px,
+    rgb(0 114 206) 4px,
     transparent 1px,
-    rgb(14 165 233) 4px
+    rgb(0 114 206) 4px
   );
   opacity: 0.5;
   z-index: -3;

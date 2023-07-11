@@ -39,3 +39,6 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 [Word Counter](https://wordcounter.net/)
 [Tailwind CSS Grid](https://tailwindcss.com/docs/grid-column)
 [Font Icons](https://icones.js.org/collection/bi?s=phone)
+[WebAim A11y](https://wave.webaim.org/)
+[RGB to HEX](http://www.javascripter.net/faq/rgbtohex.htm)
+[Contrast Checker](https://webaim.org/resources/contrastchecker/)

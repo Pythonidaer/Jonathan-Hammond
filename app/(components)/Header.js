@@ -15,7 +15,7 @@ import mechArm from '../../public/mech-arm.png'
 
 const Header = () => {
   return (
-    <header className='flex items-center justify-between px-4 py-2 bg-gray-200 border-b-4 border-cyan-500'>
+    <header className='flex items-center justify-between px-4 py-2 bg-gray-200 border-b-4 border-accent'>
       <div className='flex items-center'>
         <Link className='text-xl font-bold text-gray-800' href='/'>
           <Image

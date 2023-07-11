@@ -35,9 +35,9 @@ const SectionFour = () => {
       id='page4'
       className={`min-h-full sm:min-h-px500  relative z-0 ${styles.page4}`}
     >
-      <h1 className='text-center text-white text-6xl md:text-9xl md:text-center uppercase py-6 md:py-10 mb-0 font-mono'>
+      <h2 className='text-center text-white text-6xl md:text-9xl md:text-center uppercase py-6 md:py-10 mb-0 font-mono'>
         Contact
-      </h1>
+      </h2>
       <div className='flex flex-wrap w-4/5 mx-auto'>
         <div
           className={`w-full sm:w-1/2 md:w-1/4 lg:w-1/4 p-4 ${styles.hiddenIcon}`}
