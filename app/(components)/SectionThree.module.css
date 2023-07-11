@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald:400,700');
 
 .bgClr {
-  background-color: #b7c9e5;
+  /* background-color: #b7c9e5; */
 }
 
 .bgDark {
-  background-color: #333;
-  color: #b7c9e5;
+  /* background-color: #333;
+  color: #b7c9e5; */
 }
 
 .titleStyles {
@@ -30,7 +30,7 @@
   min-width: 90%;
   max-width: 390px;
   border-radius: 10px;
-  margin-bottom: 3rem;
+  /* margin-bottom: 3rem; */
 }
 
 @media (min-width: 40em) {
@@ -43,13 +43,19 @@
   text-align: center;
   position: relative;
   padding: 15em 5em;
-  transition: transform 3s;
+  transition: transform 0.8s;
   transform-style: preserve-3d;
   background: rgb(0 114 206);
+
+  -webkit-transform-style: preserve-3d;
 }
 
-.card:hover .card__content {
-  transform: rotateY(0.5turn);
+@media (min-width: 768px) {
+  .card:hover .card__content {
+    transform: rotateY(0.5turn);
+    background: rgb(0, 61, 111);
+    transition: 1s;
+  }
 }
 
 .card__front,
@@ -76,12 +82,11 @@
   right: var(--spacer);
   border: 3px solid currentColor;
   border-radius: 10px;
-  transform: var(-translate-z-3);
+  transform: translateZ(3rem);
 }
 
 .card__body {
-  transform: var(-translate-z-6);
-  font-weight: var(400);
+  transform: translateZ(6rem);
   font-size: 1.5rem;
   line-height: 1.6;
 }

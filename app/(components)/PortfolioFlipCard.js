@@ -1,47 +1,42 @@
 import styles from './SectionThree.module.css'
 import data from '../(data)/projects.json'
+import Link from 'next/link'
+import BiArrowRightCircle from './BiArrowRightCircle'
 
 const PortfolioFlipCard = () => {
   return (
     <div className='mx-auto flex justify-around flex-wrap'>
       {data.map((item, index) => (
-        <div key={index} className={`${styles.card} `}>
+        <div key={index} className={`${styles.card} mb-5 md:mb-8`}>
           <div className={`${styles.card__content} rounded-lg`}>
-            <div className={styles.card__front + ' ' + styles['bg-blue-300']}>
-              <h3
-                className={
-                  styles.card__title +
-                  ' ' +
-                  styles['text-4xl'] +
-                  ' ' +
-                  styles['-translate-z-10']
-                }
-              >
-                {item.title}
-              </h3>
-              <p
-                className={
-                  styles.card__subtitle +
-                  ' ' +
-                  styles.uppercase +
-                  ' ' +
-                  styles['text-xs'] +
-                  ' ' +
-                  styles['font-bold'] +
-                  ' ' +
-                  styles.opacity70 +
-                  ' ' +
-                  styles['-translate-z-20']
-                }
-              >
-                {item.subtitle}
-              </p>
-            </div>
+            <Link
+              href={item.url}
+              className={styles.card__front}
+              target='_blank'
+            >
+              <div>
+                <h3 className={`text-3xl mb-6 md:mt-[30%]`}>{item.title}</h3>
+                <p className={`text-xl mb-6`}>{item.subtitle}</p>
+                <span className='visible md:invisible bg-white  text-blue-700 font-bold py-2 px-4 rounded min-w-[120px] mx-auto z-10'>
+                  Visit App
+                </span>
+              </div>
+            </Link>
 
-            <div className={styles.card__back + ' ' + styles['bg-gray-800']}>
-              <p className={styles.card__body + ' ' + styles['rotate-y-180']}>
-                {item.details}
-              </p>
+            <div className={`${styles.card__back} `}>
+              <Link
+                href={item.url}
+                target='_blank'
+                className='absolute top-0 bottom-0 left-0 right-0 grid place-items-center items-center px-[2em] py-[5em] '
+              >
+                <p className={styles.card__body + ' ' + styles['rotate-y-180']}>
+                  {item.details}
+                </p>
+                <BiArrowRightCircle
+                  alt='Visit App'
+                  className='mx-auto mt-5 text-6xl pb-4 hover:translate-y-4 transition-all duration-1000 ease-in-out '
+                />
+              </Link>
             </div>
           </div>
         </div>
