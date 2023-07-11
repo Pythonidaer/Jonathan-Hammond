@@ -33,7 +33,7 @@ const SectionFour = () => {
   return (
     <section
       id='page4'
-      className={`min-h-full sm:min-h-px500  relative z-0 ${styles.page4}`}
+      className={`min-h-screen sm:min-h-px500  relative z-0 ${styles.page4}`}
     >
       <h2 className='text-center text-white text-6xl md:text-9xl md:text-center uppercase py-6 md:py-10 mb-0 font-mono'>
         Contact
