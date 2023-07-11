@@ -27,14 +27,14 @@ const PortfolioFlipCard = () => {
               <Link
                 href={item.url}
                 target='_blank'
-                className='absolute top-0 bottom-0 left-0 right-0 grid place-items-center items-center px-[2em] py-[5em] '
+                className={`  absolute top-0 bottom-0 left-0 right-0 grid place-items-center items-center px-[2em] py-[5em] `}
               >
                 <p className={styles.card__body + ' ' + styles['rotate-y-180']}>
                   {item.details}
                 </p>
                 <BiArrowRightCircle
                   alt='Visit App'
-                  className='mx-auto mt-5 text-6xl pb-4 hover:translate-y-4 transition-all duration-1000 ease-in-out '
+                  className={`${styles.card__back_link} mx-auto mt-5 text-6xl pb-4 hover:translate-y-4 transition-all duration-1000 ease-in-out `}
                 />
               </Link>
             </div>

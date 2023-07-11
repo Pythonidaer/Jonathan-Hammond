@@ -50,14 +50,6 @@
   -webkit-transform-style: preserve-3d;
 }
 
-@media (min-width: 768px) {
-  .card:hover .card__content {
-    transform: rotateY(0.5turn);
-    background: rgb(0, 61, 111);
-    transition: 1s;
-  }
-}
-
 .card__front,
 .card__back {
   position: absolute;
@@ -91,6 +83,27 @@
   line-height: 1.6;
 }
 
+.card__back_link {
+  fill-opacity: 0;
+}
+
 .card__back {
   transform: rotateY(0.5turn);
+  color: transparent;
+}
+
+@media (min-width: 768px) {
+  .card:hover .card__content {
+    transform: rotateY(0.5turn);
+    background: rgb(0, 61, 111);
+    transition: 1s;
+  }
+
+  .card:hover .card__back {
+    color: white;
+  }
+
+  .card:hover .card__back .card__back_link {
+    fill-opacity: 1;
+  }
 }
