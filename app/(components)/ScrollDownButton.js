@@ -23,7 +23,7 @@ const ScrollDownButton = () => {
     const sections = document.querySelectorAll('section')
     const footer = document.querySelectorAll('footer')
     const allSections = [...sections, ...footer]
-    const componentPosition = window.pageYOffset
+    const componentPosition = window.scrollY
     let closestPage
     let shortestDistance = Number.MAX_VALUE
 
