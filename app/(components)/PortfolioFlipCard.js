@@ -1,4 +1,4 @@
-import styles from './SectionThree.module.css'
+import styles from './Portfolio.module.css'
 import data from '../(data)/projects.json'
 import Link from 'next/link'
 import BiArrowRightCircle from './BiArrowRightCircle'
@@ -7,17 +7,17 @@ const PortfolioFlipCard = () => {
   return (
     <div className='mx-auto flex justify-around flex-wrap'>
       {data.map((item, index) => (
-        <div key={index} className={`${styles.card} mb-5 md:mb-8`}>
-          <div className={`${styles.card__content} rounded-lg`}>
+        <div key={index} className={`${styles.card} mb-5 md:mb-[3.5rem] `}>
+          <div className={`${styles.card__content} rounded-lg `}>
             <Link
               href={item.url}
-              className={styles.card__front}
+              className={`${styles.card__front}`}
               target='_blank'
             >
               <div>
                 <h3 className={`text-3xl mb-6 md:mt-[30%]`}>{item.title}</h3>
                 <p className={`text-xl mb-6`}>{item.subtitle}</p>
-                <span className='visible md:invisible bg-white  text-blue-700 font-bold py-2 px-4 rounded min-w-[120px] mx-auto z-10'>
+                <span className='visible md:invisible bg-white  text-accent font-bold py-2 px-4 rounded min-w-[120px] mx-auto z-10'>
                   Visit App
                 </span>
               </div>

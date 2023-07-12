@@ -63,7 +63,7 @@ const ScrollDownButton = () => {
   }, [])
 
   return (
-    <div className='flex justify-end self-end mt-5 fixed bottom-0 right-0 z-20'>
+    <div className='flex justify-end self-end mt-5 fixed bottom-0 right-0 z-20 cursor-pointer'>
       <ScrollLink
         className='relative flex items-center justify-center w-12 h-12 rounded-full bg-white transition-transform hover:translate-y-2  mb-3 mr-3 border-4 border-accent rounded-full'
         to={targetPage}

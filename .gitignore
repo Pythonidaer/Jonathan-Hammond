@@ -12,6 +12,8 @@
 /.next/
 /out/
 
+/app/(components)/SectionFive.js
+
 # production
 /build
 

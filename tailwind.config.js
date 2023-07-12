@@ -20,7 +20,7 @@ module.exports = {
         svhcalc: 'calc(100svh - 50px)',
       },
       minHeight: {
-        px500: '500px',
+        px400: '400px',
       },
       top: {
         rem25: '25rem',
