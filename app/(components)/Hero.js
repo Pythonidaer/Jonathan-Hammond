@@ -6,7 +6,7 @@ import model from '../../public/michael-angelo-david-crop.png'
 const Hero = () => {
   return (
     <section
-      className='flex justify-center items-center relative overflow-hidden h-screen bg-gradient-to-b from-white from-25% via-accent via-75% to-black max-h-[100vh] md:max-h-full h-svhcalc'
+      className='flex justify-center items-center relative overflow-hidden h-screen bg-gradient-to-b from-white from-25% via-accent via-75% to-black min-h-[100vh] md:max-h-full h-svhcalc'
       id='page1'
     >
       <div className='fixed top-[1.2rem] md:top-[1rem] left-0 w-full mt-11'>
@@ -21,7 +21,7 @@ const Hero = () => {
       <Image
         src={model}
         alt='3D Render of Michaelangelos David'
-        className='absolute bottom-0 transform translate-y-10  min-[400px]:max-[640px]:top-[4rem] md:top-[15rem] lg:top-[8rem] w-full sm:w-7/12 sm:top-[7.2rem] z-20'
+        className='absolute bottom-0 transform translate-y-10  min-[400px]:max-[640px]:top-[7rem] md:top-[15rem] lg:top-[8rem] w-full sm:w-7/12 sm:top-[7.2rem] z-20'
       />
     </section>
   )
