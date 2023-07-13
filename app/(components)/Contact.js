@@ -33,7 +33,7 @@ const Contact = () => {
   return (
     <section
       id='page4'
-      className={`min-h-screen sm:min-h-px400  relative z-0 ${styles.page4}`}
+      className={`min-h-screen max-[400px]:min-h-screen sm:min-h-px400  relative z-0 ${styles.page4}`}
     >
       <h2 className='text-center text-white text-4xl min-[350px]:text-6xl md:text-9xl md:text-center uppercase py-6 md:py-10 mb-0 font-mono'>
         Contact
