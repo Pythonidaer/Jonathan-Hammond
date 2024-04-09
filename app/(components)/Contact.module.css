@@ -3,7 +3,8 @@
   --s: 20px; /* size of the lines */
   --g: 15px; /* gap between lines */
   --c1: black;
-  --c2: rgb(0 114 206);
+  /* --c2: rgb(0 114 206); */
+  --c2: #9B039B;
   background: conic-gradient(
         at var(--s) calc(100% - var(--s)),
         #0000 270deg,

@@ -1,6 +1,15 @@
 .page2 {
-  background: rgb(0 114 206);
+  /* background: rgb(0 114 206);  used in 2023 */
+  background:#9B039B;
 }
+/*
+test
+Soft Pink: RGB(255, 192, 203)
+Pale Pink: RGB(255, 218, 230)
+Light Pink: RGB(255, 182, 193)
+Peach: RGB(255, 218, 185)
+Light Purple: RGB(230, 230, 250)
+*/
 
 /*
 .page2 {

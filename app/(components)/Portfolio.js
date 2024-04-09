@@ -7,8 +7,7 @@ const Portfolio = () => {
         Portfolio
       </h2>
       <p className=' text-xl min-[350px]:text-xl md:text-4xl w-4/5 my-8 md:mb-12 mx-auto text-accent text-center animate-pulse'>
-        Please feel free to explore some of my proudest project creations to
-        date.
+        I am the frontend engineer for a stealth startup, so my current apps are private. Please feel free to review one of my public apps from 2023 below!
       </p>
       <PortfolioFlipCard />
     </section>

@@ -1,30 +1,11 @@
 [
-  {
-    "photo": "/reddie.png",
-    "url": "https://reddie.herokuapp.com/",
-    "title": "Reddie",
-    "subtitle": "Custom UI for Saving Reddit Comments",
-    "details": "Reddit with a visually enhanced post-saving interface. Developed with JavaScript, React, Express, Node.js, MongoDB, and hosted on Heroku."
-  },
-  {
-    "photo": "/resume.png",
-    "url": "https://resumeequalizer.herokuapp.com/",
-    "title": "Resume Equalizer",
-    "subtitle": "Separates PDF Text into Parts of Speech",
-    "details": "Analyze job descriptions with Python, NLP, and JavaScript. PDF upload transforms them into organized word banks."
-  },
+
+
   {
     "photo": "/next.png",
     "url": "https://whats-next-ten.vercel.app/",
     "title": "What's Next",
     "subtitle": "Posting Complaint Form and Data Table",
     "details": "Report misleading job postings and view submitted complaints in a table. Built with Next.js, PostgreSQL, Prisma, and deployed on Heroku."
-  },
-  {
-    "photo": "/steppingstones.png",
-    "url": "https://stepping-stones-54c043ae9918.herokuapp.com/",
-    "title": "Stepping Stones",
-    "subtitle": "Multi-Step Sign-up for Bootcamp Grads",
-    "details": "MERN-stack application for bootcamp graduates to network. Features user authentication, React Hook Forms, and Styled Components."
   }
 ]

@@ -18,9 +18,7 @@ const About = () => {
         <div className='col-span-1 pb-7 md:col-span-2 '>
           <div>
             <p className='text-2xl'>
-              I am a full-stack developer who loves turning data into
-              visualizations. Currently front-end leaning, with a focus on React
-              and UX.
+              I am a React-focused Frontend Engineer who has a passion for visualizing data. I look forward to evolving into a Full-Stack Engineer.
             </p>
           </div>
         </div>
@@ -32,9 +30,7 @@ const About = () => {
         <div className='col-span-1 pb-7 md:col-span-2 '>
           <div>
             <p className='text-2xl'>
-              My current goals are to upskill as a developer until I can teach
-              myself data analytics. I dwell in JavaScript, and dabble in
-              Python.
+              I am currently transitioning from Frontend Web Development to Frontend Software Engineering. The goal is to get hired!
             </p>
           </div>
         </div>
@@ -46,9 +42,9 @@ const About = () => {
         <div className='col-span-1 pb-7 md:col-span-2 '>
           <div>
             <p className='text-2xl'>
-              JavaScript | React | MongoDB | PostgreSQL | Nextjs | Heroku |
-              Vercel | Python | NLTK | Figma | Agile | SDLC | Kanban | Jira |
-              People
+              JavaScript | React | SQL | Nextjs | Heroku |
+              Vercel | Python | NLTK | Figma | Agile  | Webpack |
+              Babel | Jest (in progress..) |
             </p>
           </div>
         </div>

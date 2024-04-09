@@ -29,13 +29,14 @@ module.exports = {
         px600: '600px',
       },
       backgroundColor: {
-        accent: 'rgb(0 114 206)',
+        // accent: 'rgb(0 114 206)',
+        accent: '#9B039B',
       },
       borderColor: {
-        accent: 'rgb(0 114 206)',
+        accent: '#9B039B',
       },
       colors: {
-        accent: 'rgb(0 114 206)',
+        accent: '#9B039B',
       },
     },
   },
